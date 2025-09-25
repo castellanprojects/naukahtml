@@ -1,5 +1,3 @@
-Hejo! Super, że chcesz uporządkować te podstawowe elementy! To fundamenty każdej strony internetowej. 🚀 Przygotowałem notatkę, a potem wspólnie możemy pogłębić wybrane zagadnienia.
-
 ## 📝 Notatka: Podstawy HTML i CSS
 
 ---
