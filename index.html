@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Struktura i Podstawy Stylizacji</title>
+
+    <style>
+        /* Ustawienie podstawowej czcionki i koloru tła strony */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font-family */
+            background-color: #f0f0f0; /* background-color */
+            color: #333; /* color (kolor tekstu) */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Stylizacja sekcji formularza dla kontrastu */
+        .form-section {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            background-color: darkslategray;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: darkblue;
+            font-weight: 700; /* font-weight (pogrubienie) */
+            font-size: 1.8em; /* font-size */
+        }
+
+        /* Personalizowany kod */
+        .code-example {
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+            background-color: #333;
+        }
+
+        .mycontainer {
+            width: 100%;
+            overflow: auto;
+        }
+
+        .mycontainer div {
+            width: 33%;
+            display: inline-block;
+        }
+
+        .london-section {
+            background-color: #f0f0f0; /* Tło tekstu (dla bloku) */
+            padding: 25px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main> <h1>Witamy na stronie testowej!</h1>
+
+        <article> <h2>Przykład Użycia List</h2>
+
+            <div> <h3>Lista Nieuporządkowana <span class="code-example">(ul)</span></h3>
+                <ul style="list-style-type: square;"> <li>Element listy 1</li> <li>Element listy 2</li>
+                </ul>
+
+                <h3>Lista Uporządkowana <span class="code-example">(ol)</span></h3>
+                <ol type="a"> <li>Pierwszy krok</li>
+                    <li>Drugi krok</li>
+                </ol>
+            </div>
+        </article>
+
+        <section> <h2>Tabela Danych (Rowspan i Colspan)</h2>
+            <table border="1" style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <th colspan="3">Nagłówek Tabeli (colspan)</th> </tr>
+                <tr>
+                    <th rowspan="2">Dane A (rowspan)</th> <td>Wiersz 1, Kolumna 2</td> <td>Wiersz 1, Kolumna 3</td>
+                </tr>
+                <tr>
+                    <td>Wiersz 2, Kolumna 2</td>
+                    <td>Wiersz 2, Kolumna 3</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="london-section"> <div class="mycontainer">
+            <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 9 million inhabitants.</p>
+            </div>
+            <div style="background-color:#FFC0C7;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 9 million inhabitants.</p>
+            </div>
+            <div style="background-color:#D9EEE1;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 9 million inhabitants.</p>
+            </div>
+            </div>
+        </section>
+        
+        <section class="form-section">
+            <h2 style="color: blanchedalmond;">Przykładowy Formularz</h2>
+            <form action="/dane" method="post"> <p>
+                    <label>Imię:</label>
+                    <input type="text" name="imie" placeholder="Wpisz imię" required> </p>
+                <p>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="adres@domena.pl" required> </p>
+                <p>
+                    <label>Hasło:</label>
+                    <input type="password" name="haslo" placeholder="Tylko dla Ciebie" required> </p>
+
+                <p>
+                    Preferencje:
+                    <label><input type="radio" name="opcja_wyboru" value="opcja_a" checked> Opcja A</label> <label><input type="radio" name="opcja_wyboru" value="opcja_b"> Opcja B</label>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="akceptacja" value="tak"> Akceptuję regulamin</label> </p>
+
+                <p>
+                    <label for="miasto">Wybierz miasto:</label>
+                    <select name="miasto" id="miasto"> <option value="wawa">Warszawa</option> <option value="krakow">Kraków</option>
+                    </select>
+                </p>
+                <button type="submit">Zarejestruj</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer> <p>&copy; 2024 Podstawy WebDev. Ćwiczenia praktyczne.</p>
+    </footer>
+</body>
+</html>
