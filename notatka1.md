@@ -70,11 +70,3 @@ Kaskadowe Arkusze Stylów (CSS) decydują o wyglądzie elementów HTML.
 | **`font-size`** | Ustawia **rozmiar czcionki**. | `16px`, `1.2em`, `120%` |
 | **`font-weight`** | Definiuje **grubość czcionki**. | `normal`, `bold`, `400`, `700` |
 | **`text-align`** | Wyrównanie tekstu w poziomie. | `left`, `center`, `right`, `justify` |
-
----
-
-To solidna podstawa! Aby pójść dalej, chciałbyś:
-
-1.  **Stworzyć prosty formularz** i zobaczyć, jak działają atrybuty `name` i `type`?
-2.  Dowiedzieć się, **jak style CSS są faktycznie łączone** z kodem HTML (np. style inline, `<style>`, pliki zewnętrzne)?
-3.  Zrozumieć, **czym różnią się elementy blokowe od elementów liniowych** (jak np. `<div>` od `<span>`)?
